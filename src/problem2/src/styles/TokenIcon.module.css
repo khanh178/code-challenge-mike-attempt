@@ -1,0 +1,38 @@
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.icon img {
+  object-fit: contain;
+  display: block;
+}
+
+.icon img.loading {
+  opacity: 0;
+}
+
+.icon img.loaded {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.placeholder {
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder::after {
+  content: '?';
+  color: #999;
+  font-weight: 600;
+  font-size: 12px;
+}
+
